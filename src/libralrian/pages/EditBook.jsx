@@ -7,8 +7,7 @@ const EditBook = () => {
     title: '',
     publisher: '',
     supplier: '',
-    publishedDate: '',
-    status: 'available'
+    publishedDate: ''
   });
 
   const handleChange = (e) => {
@@ -87,21 +86,6 @@ const EditBook = () => {
                 className="neumorph-inset w-full p-2 rounded"
                 required
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
-              <select
-                name="status"
-                value={formData.status}
-                onChange={handleChange}
-                className="neumorph-inset w-full p-2 rounded"
-                required
-              >
-                <option value="available">Available</option>
-                <option value="borrowed">Borrowed</option>
-                <option value="maintenance">Maintenance</option>
-              </select>
             </div>
           </div>
 
