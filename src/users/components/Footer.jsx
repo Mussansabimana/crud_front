@@ -8,8 +8,7 @@ const Footer = () => {
           © {new Date().getFullYear()} GS BUMBA TSS Library System
         </p>
         <div className="flex items-center gap-8">
-          <a href="#" className="text-sm text-gray-600 hover:text-accent-blue transition-colors">Privacy Policy</a>
-          <a href="#" className="text-sm text-gray-600 hover:text-accent-blue transition-colors">Terms of Service</a>
+          <a href="#" className="text-sm text-gray-600 hover:text-accent-blue transition-colors">Help Center</a>
           <a href="#" className="text-sm text-gray-600 hover:text-accent-blue transition-colors">Contact Support</a>
         </div>
       </div>

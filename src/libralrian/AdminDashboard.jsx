@@ -6,16 +6,14 @@ import Footer from './components/Footer';
 
 const AdminDashboard = () => {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
-      <div className="flex flex-1">
-        <Sidebar />
-        <div className="flex-1 flex flex-col p-4">
-          <Nav />
-          <main className="flex-1 dark-neumorph-inset rounded-xl p-6 mb-4 overflow-auto">
-            <Outlet />
-          </main>
-          <Footer />
-        </div>
+    <div className="h-screen bg-[#e0e5ec] flex overflow-hidden">
+      <Sidebar />
+      <div className="flex-1 flex flex-col h-screen">
+        <Nav />
+        <main className="flex-1 overflow-y-auto p-6">
+          <Outlet />
+        </main>
+        <Footer />
       </div>
     </div>
   );
